@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALVAMAR Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>SALVAMAR</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">MATRÍCULA</label>
+                    <input type="text" id="username" name="username" maxlength="6" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">SENHA</label>
+                    <input type="text" id="password" name="password" maxlength="6" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>PRAIAS</label>
+                    <div class="checkboxes">
+                        <label><input type="checkbox" name="location" value="Armacao II DIREITA"> Armação II.1</label>
+                        <label><input type="checkbox" name="location" value="Armação II ESQUERDA"> Armação II.2</label>
+                        <label><input type="checkbox" name="location" value="Corsario I DIREITA"> Corsário I.1</label>
+                        <label><input type="checkbox" name="location" value="Corsario I ESQUERDA"> Corsário I.2</label>
+                        <label><input type="checkbox" name="location" value="Pituacu I DIREITA"> Pituaçu I.1</label>
+                        <label><input type="checkbox" name="location" value="Pituaçu I ESQUERDA"> Pituaçu I.2</label>
+                        <label><input type="checkbox" name="location" value="Artista I DIREITA"> Artista I.1</label>
+                        <label><input type="checkbox" name="location" value="Artista I ESQUERDA"> Artista I.2</label>
+                        <label><input type="checkbox" name="location" value="Patamares II DIREITA"> Patamares II.1</label>
+                        <label><input type="checkbox" name="location" value="Patamares II ESQUERDA"> Patamares II.2</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">HORA</label>
+                    <input type="text" id="hora" name="hora" maxlength="8" placeholder="HH:MM:SS" required>
+                </div>
+
+                <button type="button" id="confirmarBtn">CONFIRMAR INFORMAÇÕES</button>
+                <button type="submit" id="entrarBtn" disabled>ENTRAR</button>
+            </form>
+        </div>
+
+        <div class="console-container">
+            <h2>CONSOLE</h2>
+            <div id="console" class="console"></div>
+        </div>
+    </div>
+
+    <div class="clock" id="clock"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
